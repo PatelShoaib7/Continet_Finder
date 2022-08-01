@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+.clas{
+    height:40px;
+    width:200px;
+    line-height: 1px;
+margin: auto;
+  padding: 20px;
+  gap: 20px;
+}
+.clas > select , button{
+    height:40px;
+    width:200px;
+    line-height: 1px;
+    margin: 40px;
+    gap:40px;
+    font-size: 25px;
+   
+    
+}
+
+.find{
+    margin: auto;
+  
+    width:200px;
+}
+#done{
+    font-size: 30px;
+}
+#text ,#text2{
+    border: 1px solid black;
+    margin: 60px;
+    width: 200px;
+    height: 60px;
+}
+</style>
+
+<body>
+    <div>
+     
+    <div class="clas">
+    <select id="continent_select">
+        <option value="">--</option>
+        <option value="India">India</option>
+        <option value="United States of America">United States of America</option>
+        <option value="China">China</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Australia">Australia</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Canada">Canada</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Sweden">Sweden</option>
+    </select>
+    <div id="text">
+        <h3 id="p" style="margin-bottom: px;
+        font-size: 40px;
+        margin-left: 30px;
+">
+    <div >
+       <h2  id="text2"></h2>
+    </div>
+
+
+   
+</h3>
+    </div>
+   
+</div>
+</div>
+   <div class="find">
+
+  <button style="margin-top: 70px;" >Find Continet</button>
+</div>
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click", show)
+    function show(event) {
+        event.preventDefault();
+        var name = document.querySelector("#continent_select").value
+        switch (name) 
+        {
+            case "India":
+                document.querySelector("#p").innerText = "Asia";
+                document.querySelector("#text2").innerText = "Asia";
+               
+                alert("Continet Is Asia")
+                break;
+            case "United States of America":
+                document.querySelector("#p").innerText = "Urope";
+                document.querySelector("#text2").innerText = "Urope";
+                alert("The Continet Is Europe")
+                break;
+
+            case "China":
+                document.querySelector("#p").innerText = "Asia";
+                document.querySelector("#text2").innerText = "Asia";
+                alert("The Continet Is Asia")
+                break;
+
+            case "Australia":
+                document.querySelector("#p").innerText = "Oceania";
+                document.querySelector("#text2").innerText = "Oceania";
+                alert("Continent Is Ocenia")
+                break;
+
+            case "France":
+                document.querySelector("#p").innerText = "Europe";
+                document.querySelector("#text2").innerText = "Europe";
+                alert("Continet Is Europe")
+                break;
+
+            case "Germany":
+                document.querySelector("#p").innerText = "Europe";
+                document.querySelector("#text2").innerText = "Europe";
+                alert("Contient Is Europe")
+                break;
+            case "South-Africa":
+                document.querySelector("#p").innerText = "Argentnia";
+                document.querySelector("#text2").innerText = "Argentnia";
+                alert("Contient Is Argentenia")
+                break;
+            case "Nigeria":
+                document.querySelector("#p").innerText = "Africa";
+                document.querySelector("#text2").innerText = "Africa";
+                alert("Contient Is Africa")
+                break;
+            case "Mexico":
+                document.querySelector("#p").innerText = "South-America";
+                document.querySelector("#text2").innerText = "North-America";
+                alert("Contient Is South-America")
+                break;
+            case "Brazil":
+                document.querySelector("#p").innerText = "North-America";
+                document.querySelector("#text2").innerText = "North-America";
+                alert("Contient Is North-America")
+                break;
+            case "Canada":
+                document.querySelector("#p").innerText = "  North-Amrica";
+                document.querySelector("#text2").innerText = " North-Amrica";
+                alert("Contient Is North-America")
+                break;
+            case "Singapore":
+                document.querySelector("#p").innerText = "Europe";
+                document.querySelector("#text2").innerText = "Europe";
+                alert("Contient Is Europe")
+                break;
+
+            case "Swedan":
+                document.querySelector("#p").innerText = "Europe";
+                document.querySelector("#text2").innerText = "Europe";
+                alert("Contient Is Europe")
+                break;
+        }
+
+    }
+
+
+</script>
